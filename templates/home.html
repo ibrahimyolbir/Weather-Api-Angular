@@ -1,0 +1,21 @@
+<section>
+    <h1>{{name}}</h1>
+    <div class="name" ng-repeat="name in names">
+        <p>{{name}}</p>
+    </div>
+    <ibo></ibo>
+
+    <button ng-click="show()">Klicka Här!</button>
+    <button ng-click="showData()">Hämta Data</button>
+    <button ng-click="visaBilder()">Hämta Bilder</button>
+    <div ng-repeat="data in data">
+        <pre>{{data.title}}</pre>
+    </div>
+
+    <div class="bilder" ng-repeat="bild in bilder">
+        <h4>{{bild.title}}</h4>
+        <img ng-src="{{bild.url}}" alt="ingen bild">
+
+    </div>
+
+</section>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ajaxApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Angular Services</title>
+</head>
+
+<body>
+    <nav>
+        <li><a href="#!/">Home</a></li>
+        <li><a href="#!/results">Results</a></li>
+        <li><a href="#!/weather">Search Weather</a></li>
+    </nav>
+    
+    <div ng-view></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.9/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+    <script src="directive.js"></script>
+    <script src="services.js"></script>
+</body>
+
+</html>
